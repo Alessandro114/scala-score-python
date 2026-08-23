@@ -1,0 +1,17 @@
+name: CI
+on:
+  push: { branches: [main, master] }
+  pull_request:
+
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    strategy:
+      # L'SDK dichiara requires-python >=3.9: se lo dichiara, lo prova.
+      matrix: { python: ['3.9', '3.10', '3.11', '3.12'] }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '${{ matrix.python }}' }
+      - run: pip install -e ".[dev]"
+      - run: pytest --cov=scala_score --cov-report=term-missing --cov-fail-under=100

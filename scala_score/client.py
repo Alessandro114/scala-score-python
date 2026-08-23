@@ -97,13 +97,22 @@ class ScalaScore:
         api_key: str,
         base_url: str = "https://app.get-scala.com",
         timeout: float = 30.0,
+        transport: Optional[httpx.BaseTransport] = None,
     ):
+        """
+        Args:
+            transport: optional httpx transport. Left as None it behaves exactly
+                as before. Passing one lets a caller — a test above all — decide
+                where the requests actually go, without patching module globals
+                or touching the network.
+        """
         self.api_key = api_key
         self.base_url = base_url.rstrip("/")
         self._client = httpx.Client(
             base_url=self.base_url,
             headers={"X-API-Key": api_key, "Content-Type": "application/json"},
             timeout=timeout,
+            transport=transport,
         )
 
     def search(

@@ -29,3 +29,19 @@ dependencies = ["httpx>=0.25.0"]
 Homepage = "https://get-scala.com"
 Documentation = "https://get-scala.com/score/api/docs"
 Repository = "https://github.com/Alessandro114/scala-score-python"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov>=4.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source = ["scala_score"]
+
+[tool.coverage.report]
+# 154 righe di client e ogni ramo raggiungibile con un MockTransport: qui il
+# 100% e verificabile, non una posa. La soglia impedisce che un metodo nuovo
+# entri senza prove.
+fail_under = 100
+show_missing = true
