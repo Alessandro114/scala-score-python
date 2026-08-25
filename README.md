@@ -1,5 +1,6 @@
 # scala-score
 
+[![CI](https://github.com/Alessandro114/scala-score-python/actions/workflows/ci.yml/badge.svg)](https://github.com/Alessandro114/scala-score-python/actions/workflows/ci.yml) [![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/Alessandro114/scala-score-python/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/scala-score)](https://pypi.org/project/scala-score/)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 [![Companies](https://img.shields.io/badge/companies-244M%2B-green)](https://get-scala.com/score)
