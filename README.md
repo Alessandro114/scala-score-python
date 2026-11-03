@@ -3,9 +3,9 @@
 [![CI](https://github.com/Alessandro114/scala-score-python/actions/workflows/ci.yml/badge.svg)](https://github.com/Alessandro114/scala-score-python/actions/workflows/ci.yml) [![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)](https://github.com/Alessandro114/scala-score-python/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/scala-score)](https://pypi.org/project/scala-score/)
 [![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
-[![Companies](https://img.shields.io/badge/companies-244M%2B-green)](https://get-scala.com/score)
+[![Companies](https://img.shields.io/badge/companies-249M%2B-green)](https://get-scala.com/score)
 
-**Python SDK for [S.C.A.L.A. Score API](https://get-scala.com/score)** — search 244M+ companies across 40+ countries.
+**Python SDK for [S.C.A.L.A. Score API](https://get-scala.com/score)** — search 249M+ companies in 264 countries.
 
 ## Install
 
@@ -82,7 +82,7 @@ Each company includes (when available):
 
 ## Coverage
 
-244M+ companies across 40+ countries including:
+249M+ companies in 264 countries including:
 
 | Country | Companies | Source |
 |---------|-----------|-------|
@@ -121,3 +121,7 @@ Compare: Dun & Bradstreet charges €2-5 per lookup. ZoomInfo starts at $15K/yea
 ## License
 
 MIT
+
+## Data coverage
+
+S.C.A.L.A. Score holds about 249 million company records from public registries and open data in 264 countries (figure shown on [score.get-scala.com](https://score.get-scala.com), checked 03/11/2026). Financial fields such as revenue, employees or score are present only where the source publishes them, which is a minority of the records; always check each field before relying on it.
