@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "scala-score"
 version = "0.1.0"
-description = "Python SDK for S.C.A.L.A. Score API — Search 244M+ companies worldwide"
+description = "Python SDK for S.C.A.L.A. Score API — Search 249M+ companies worldwide"
 readme = "README.md"
 license = "MIT"
 requires-python = ">=3.9"
